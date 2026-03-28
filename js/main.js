@@ -179,9 +179,9 @@ document.querySelectorAll('section').forEach(section => {
 
 // ==================== 打字效果 ====================
 const typingTexts = [
-    '6年Java后台开发经验 | 金融科技 | 供应链系统',
-    '架构设计 | 性能优化 | 领域驱动设计',
-    '热爱技术 | 情绪稳定 | 持续学习'
+    '多年后端开发经验 | Java/Go | AI应用 | 企业级系统',
+    '飞书知识问答 | 微众银行 | 美团点评',
+    'RAG架构 | 分布式系统 | 性能优化'
 ];
 
 let textIndex = 0;
