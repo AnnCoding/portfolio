@@ -64,12 +64,12 @@ class ParticleTrail {
         const particle = document.createElement('div');
         particle.className = 'particle';
 
-        // 橙色浅蓝色系颜色
+        // 冰淇淋色调颜色
         const colors = [
-            'rgba(251, 146, 60, 0.8)',   // 橙色
-            'rgba(125, 211, 252, 0.8)',   // 浅蓝
-            'rgba(253, 186, 116, 0.8)',   // 浅橙
-            'rgba(56, 189, 248, 0.8)'     // 天蓝
+            'rgba(244, 114, 182, 0.8)',   // 粉色
+            'rgba(165, 180, 252, 0.8)',   // 蓝紫色
+            'rgba(251, 113, 133, 0.8)',   // 玫瑰粉
+            'rgba(129, 140, 248, 0.8)'    // 薰衣草紫
         ];
 
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -149,9 +149,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(26, 26, 46, 0.95)';
+        navbar.style.background = 'rgba(30, 27, 46, 0.95)';
     } else {
-        navbar.style.background = 'rgba(26, 26, 46, 0.9)';
+        navbar.style.background = 'rgba(30, 27, 46, 0.9)';
     }
 
     lastScroll = currentScroll;
@@ -220,11 +220,11 @@ setTimeout(typeEffect, 1500);
 // ==================== 技能标签悬停效果 ====================
 document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.addEventListener('mouseenter', function() {
-        this.style.background = 'linear-gradient(135deg, #fdba74, #fb923c)';
+        this.style.background = 'linear-gradient(135deg, #fb7185, #f472b6)';
     });
 
     tag.addEventListener('mouseleave', function() {
-        this.style.background = 'linear-gradient(135deg, #fb923c, #7dd3fc)';
+        this.style.background = 'linear-gradient(135deg, #f472b6, #a5b4fc)';
     });
 });
 
@@ -327,10 +327,10 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// ==================== 控制台彩蛋 - 橙色浅蓝色系 ====================
-console.log('%c欢迎来到我的个人网站！', 'font-size: 20px; color: #fb923c; font-weight: bold;');
-console.log('%c如果你对代码感兴趣，欢迎联系我！', 'font-size: 14px; color: #7dd3fc;');
-console.log('%c🌊 Let\'s build something amazing together!', 'font-size: 12px; color: #fdba74;');
+// ==================== 控制台彩蛋 - 冰淇淋色调 ====================
+console.log('%c欢迎来到我的个人网站！', 'font-size: 20px; color: #f472b6; font-weight: bold;');
+console.log('%c如果你对代码感兴趣，欢迎联系我！', 'font-size: 14px; color: #a5b4fc;');
+console.log('%c🍦 Let\'s build something amazing together!', 'font-size: 12px; color: #c4b5fd;');
 
 // ==================== 返回顶部按钮 ====================
 const backToTop = document.createElement('button');
@@ -343,7 +343,7 @@ backToTop.style.cssText = `
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #fb923c, #7dd3fc);
+    background: linear-gradient(135deg, #f472b6, #a5b4fc);
     color: white;
     border: none;
     font-size: 20px;
@@ -352,7 +352,7 @@ backToTop.style.cssText = `
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 999;
-    box-shadow: 0 4px 15px rgba(251, 146, 60, 0.4);
+    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.4);
 `;
 
 document.body.appendChild(backToTop);
