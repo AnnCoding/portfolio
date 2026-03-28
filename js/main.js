@@ -149,9 +149,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(42, 37, 64, 0.95)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
     } else {
-        navbar.style.background = 'rgba(42, 37, 64, 0.9)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
     }
 
     lastScroll = currentScroll;
@@ -220,7 +220,7 @@ setTimeout(typeEffect, 1500);
 // ==================== 技能标签悬停效果 ====================
 document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.addEventListener('mouseenter', function() {
-        this.style.background = 'linear-gradient(135deg, #FCD7FC, #D0FFC9)';
+        this.style.background = 'linear-gradient(135deg, #F472B6, #818CF8)';
     });
 
     tag.addEventListener('mouseleave', function() {
@@ -352,7 +352,7 @@ backToTop.style.cssText = `
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 999;
-    box-shadow: 0 4px 15px rgba(252, 215, 252, 0.4);
+    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.4);
 `;
 
 document.body.appendChild(backToTop);

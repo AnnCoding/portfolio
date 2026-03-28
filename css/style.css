@@ -1,13 +1,13 @@
-/* ==================== 全局样式 - 冰淇淋配色 ==================== */
+/* ==================== 全局样式 - 冰淇淋白底配色 ==================== */
 :root {
-    /* 冰淇淋色调 - 柔和马卡龙色系 */
-    --primary-color: #FCD7FC;
-    --secondary-color: #B1EBFC;
-    --accent-color: #D0FFC9;
-    --dark-bg: #2a2540;
-    --card-bg: #363054;
-    --text-primary: #FFFEE6;
-    --text-secondary: #DEFCF2;
+    /* 冰淇淋色调 - 白底深字清爽配色 */
+    --primary-color: #F472B6;
+    --secondary-color: #818CF8;
+    --accent-color: #34D399;
+    --dark-bg: #FFFFFF;
+    --card-bg: #FEF7FF;
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
     --gradient-1: linear-gradient(135deg, #FCD7FC, #B1EBFC);
     --gradient-2: linear-gradient(135deg, #FCD7FC, #D0FFC9);
     --gradient-3: linear-gradient(135deg, #B1EBFC, #DEFCF2);
@@ -101,7 +101,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(42, 37, 64, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(252, 215, 252, 0.2);
@@ -137,6 +137,10 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
 }
 
 .nav-menu a::after {
@@ -187,8 +191,8 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 20% 50%, rgba(252, 215, 252, 0.12), transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(177, 235, 252, 0.12), transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(252, 215, 252, 0.15), transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(177, 235, 252, 0.15), transparent 50%);
     animation: rotate 30s linear infinite;
 }
 
@@ -301,6 +305,12 @@ body {
 
 .btn-secondary:hover {
     background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
     transform: translateY(-3px);
 }
 
@@ -367,6 +377,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     animation: bounce 2s infinite;
+    color: var(--text-secondary);
 }
 
 @keyframes bounce {
@@ -378,7 +389,7 @@ body {
 .mouse {
     width: 30px;
     height: 50px;
-    border: 2px solid var(--text-secondary);
+    border: 2px solid #ccc;
     border-radius: 15px;
     margin: 10px auto 0;
     position: relative;
@@ -404,7 +415,7 @@ body {
 /* ==================== 关于我 ==================== */
 .about {
     padding: 100px 0;
-    background: linear-gradient(180deg, var(--dark-bg) 0%, rgba(54, 48, 84, 0.3) 100%);
+    background: linear-gradient(180deg, var(--dark-bg) 0%, rgba(254, 247, 255, 0.5) 100%);
 }
 
 .about-content {
@@ -420,9 +431,10 @@ body {
     border-radius: 20px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(252, 215, 252, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.3);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-card::before {
@@ -439,7 +451,7 @@ body {
 
 .about-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.3);
+    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.25);
 }
 
 .about-card:hover::before {
@@ -620,7 +632,7 @@ body {
 /* ==================== 项目经验 ==================== */
 .projects {
     padding: 100px 0;
-    background: linear-gradient(180deg, rgba(54, 48, 84, 0.3) 0%, var(--dark-bg) 100%);
+    background: linear-gradient(180deg, rgba(254, 247, 255, 0.5) 0%, var(--dark-bg) 100%);
 }
 
 .projects-grid {
@@ -633,13 +645,14 @@ body {
     background: var(--card-bg);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(252, 215, 252, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.3);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.3);
+    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.25);
 }
 
 .project-image {
@@ -682,11 +695,12 @@ body {
 }
 
 .project-tech span {
-    background: rgba(252, 215, 252, 0.2);
+    background: rgba(244, 114, 182, 0.15);
     padding: 5px 12px;
     border-radius: 15px;
     font-size: 0.85rem;
-    color: var(--primary-color);
+    color: #be185d;
+    font-weight: 500;
 }
 
 .project-link {
@@ -757,13 +771,14 @@ body {
     padding: 2rem;
     border-radius: 20px;
     position: relative;
-    border: 1px solid rgba(253, 186, 116, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.3);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .insight-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(253, 186, 116, 0.3);
+    box-shadow: 0 15px 35px rgba(252, 215, 252, 0.2);
     border-color: var(--accent-color);
 }
 
@@ -807,13 +822,14 @@ body {
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
-    border: 1px solid rgba(125, 211, 252, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.3);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .life-item:hover {
     transform: translateY(-5px) rotate(2deg);
-    box-shadow: 0 15px 35px rgba(125, 211, 252, 0.3);
+    box-shadow: 0 15px 35px rgba(252, 215, 252, 0.2);
     border-color: var(--secondary-color);
 }
 
@@ -867,13 +883,14 @@ body {
     gap: 1rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid rgba(251, 146, 60, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.3);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(251, 146, 60, 0.3);
+    box-shadow: 0 15px 35px rgba(252, 215, 252, 0.2);
     border-color: var(--primary-color);
 }
 
@@ -899,7 +916,7 @@ body {
 .footer {
     padding: 2rem 0;
     text-align: center;
-    border-top: 1px solid rgba(251, 146, 60, 0.2);
+    border-top: 1px solid rgba(252, 215, 252, 0.3);
 }
 
 .footer p {
