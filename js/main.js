@@ -179,9 +179,9 @@ document.querySelectorAll('section').forEach(section => {
 
 // ==================== 打字效果 ====================
 const typingTexts = [
-    '多年后端开发经验 | Java/Go | AI应用 | 企业级系统',
-    '飞书知识问答 | 微众银行 | 美团点评',
-    'RAG架构 | 分布式系统 | 性能优化'
+    '$> skills --show "Java" "Go" "RAG" "Microservices"',
+    '$> experience --company "ByteDance" "WeBank" "Meituan"',
+    '$> projects --list --type "Knowledge Q&A" "Enterprise Systems"'
 ];
 
 let textIndex = 0;

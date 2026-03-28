@@ -228,13 +228,34 @@ body {
 }
 
 .name-reveal {
-    font-size: 4rem;
+    font-size: 2.5rem;
     background: var(--gradient-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease;
     font-weight: 700;
+    font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+    line-height: 1.6;
+}
+
+/* 终端风格文字 */
+.terminal-text {
+    font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* 终端光标效果 */
+.terminal-text::after {
+    content: '█';
+    animation: blinkCursor 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blinkCursor {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 }
 
 @keyframes fadeInUp {
