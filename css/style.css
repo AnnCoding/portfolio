@@ -1,16 +1,16 @@
-/* ==================== 全局样式 - 清爽冰淇淋色调 ==================== */
+/* ==================== 全局样式 - 冰淇淋配色 ==================== */
 :root {
-    /* 冰淇淋色调 - 粉蓝紫温柔配色 */
-    --primary-color: #f472b6;
-    --secondary-color: #a5b4fc;
-    --accent-color: #c4b5fd;
-    --dark-bg: #1e1b2e;
-    --card-bg: #2a2640;
-    --text-primary: #fdf4ff;
-    --text-secondary: #d8b4fe;
-    --gradient-1: linear-gradient(135deg, #f472b6, #a5b4fc);
-    --gradient-2: linear-gradient(135deg, #fb7185, #f472b6);
-    --gradient-3: linear-gradient(135deg, #818cf8, #a5b4fc);
+    /* 冰淇淋色调 - 柔和马卡龙色系 */
+    --primary-color: #FCD7FC;
+    --secondary-color: #B1EBFC;
+    --accent-color: #D0FFC9;
+    --dark-bg: #2a2540;
+    --card-bg: #363054;
+    --text-primary: #FFFEE6;
+    --text-secondary: #DEFCF2;
+    --gradient-1: linear-gradient(135deg, #FCD7FC, #B1EBFC);
+    --gradient-2: linear-gradient(135deg, #FCD7FC, #D0FFC9);
+    --gradient-3: linear-gradient(135deg, #B1EBFC, #DEFCF2);
 }
 
 * {
@@ -101,10 +101,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(30, 27, 46, 0.9);
+    background: rgba(42, 37, 64, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(244, 114, 182, 0.2);
+    border-bottom: 1px solid rgba(252, 215, 252, 0.2);
 }
 
 .nav-container {
@@ -187,8 +187,8 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 20% 50%, rgba(244, 114, 182, 0.12), transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(165, 180, 252, 0.12), transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(252, 215, 252, 0.12), transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(177, 235, 252, 0.12), transparent 50%);
     animation: rotate 30s linear infinite;
 }
 
@@ -228,34 +228,13 @@ body {
 }
 
 .name-reveal {
-    font-size: 2.5rem;
+    font-size: 4rem;
     background: var(--gradient-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease;
     font-weight: 700;
-    font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
-    line-height: 1.6;
-}
-
-/* 终端风格文字 */
-.terminal-text {
-    font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-/* 终端光标效果 */
-.terminal-text::after {
-    content: '█';
-    animation: blinkCursor 1s infinite;
-    margin-left: 5px;
-}
-
-@keyframes blinkCursor {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
 }
 
 @keyframes fadeInUp {
@@ -306,12 +285,12 @@ body {
 .btn-primary {
     background: var(--gradient-1);
     color: white;
-    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.4);
+    box-shadow: 0 4px 15px rgba(252, 215, 252, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(244, 114, 182, 0.6);
+    box-shadow: 0 6px 20px rgba(252, 215, 252, 0.6);
 }
 
 .btn-secondary {
@@ -425,7 +404,7 @@ body {
 /* ==================== 关于我 ==================== */
 .about {
     padding: 100px 0;
-    background: linear-gradient(180deg, var(--dark-bg) 0%, rgba(42, 38, 64, 0.3) 100%);
+    background: linear-gradient(180deg, var(--dark-bg) 0%, rgba(54, 48, 84, 0.3) 100%);
 }
 
 .about-content {
@@ -441,7 +420,7 @@ body {
     border-radius: 20px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(244, 114, 182, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -460,7 +439,7 @@ body {
 
 .about-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(244, 114, 182, 0.3);
+    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.3);
 }
 
 .about-card:hover::before {
@@ -641,7 +620,7 @@ body {
 /* ==================== 项目经验 ==================== */
 .projects {
     padding: 100px 0;
-    background: linear-gradient(180deg, rgba(42, 38, 64, 0.3) 0%, var(--dark-bg) 100%);
+    background: linear-gradient(180deg, rgba(54, 48, 84, 0.3) 0%, var(--dark-bg) 100%);
 }
 
 .projects-grid {
@@ -654,13 +633,13 @@ body {
     background: var(--card-bg);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(244, 114, 182, 0.2);
+    border: 1px solid rgba(252, 215, 252, 0.2);
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(244, 114, 182, 0.3);
+    box-shadow: 0 20px 40px rgba(252, 215, 252, 0.3);
 }
 
 .project-image {
@@ -703,7 +682,7 @@ body {
 }
 
 .project-tech span {
-    background: rgba(244, 114, 182, 0.2);
+    background: rgba(252, 215, 252, 0.2);
     padding: 5px 12px;
     border-radius: 15px;
     font-size: 0.85rem;

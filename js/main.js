@@ -66,10 +66,10 @@ class ParticleTrail {
 
         // 冰淇淋色调颜色
         const colors = [
-            'rgba(244, 114, 182, 0.8)',   // 粉色
-            'rgba(165, 180, 252, 0.8)',   // 蓝紫色
-            'rgba(251, 113, 133, 0.8)',   // 玫瑰粉
-            'rgba(129, 140, 248, 0.8)'    // 薰衣草紫
+            'rgba(252, 215, 252, 0.8)',   // 淡粉色
+            'rgba(177, 235, 252, 0.8)',   // 天蓝色
+            'rgba(208, 255, 201, 0.8)',   // 薄荷绿
+            'rgba(222, 252, 242, 0.8)'    // 淡紫粉色
         ];
 
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -149,9 +149,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(30, 27, 46, 0.95)';
+        navbar.style.background = 'rgba(42, 37, 64, 0.95)';
     } else {
-        navbar.style.background = 'rgba(30, 27, 46, 0.9)';
+        navbar.style.background = 'rgba(42, 37, 64, 0.9)';
     }
 
     lastScroll = currentScroll;
@@ -179,9 +179,9 @@ document.querySelectorAll('section').forEach(section => {
 
 // ==================== 打字效果 ====================
 const typingTexts = [
-    '$> skills --show "Java" "Go" "RAG" "Microservices"',
-    '$> experience --company "ByteDance" "WeBank" "Meituan"',
-    '$> projects --list --type "Knowledge Q&A" "Enterprise Systems"'
+    '多年后端开发经验 | Java/Go | AI应用 | 企业级系统',
+    '飞书知识问答 | 微众银行 | 美团点评',
+    'RAG架构 | 分布式系统 | 性能优化'
 ];
 
 let textIndex = 0;
@@ -220,11 +220,11 @@ setTimeout(typeEffect, 1500);
 // ==================== 技能标签悬停效果 ====================
 document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.addEventListener('mouseenter', function() {
-        this.style.background = 'linear-gradient(135deg, #fb7185, #f472b6)';
+        this.style.background = 'linear-gradient(135deg, #FCD7FC, #D0FFC9)';
     });
 
     tag.addEventListener('mouseleave', function() {
-        this.style.background = 'linear-gradient(135deg, #f472b6, #a5b4fc)';
+        this.style.background = 'linear-gradient(135deg, #FCD7FC, #B1EBFC)';
     });
 });
 
@@ -328,9 +328,9 @@ window.addEventListener('load', () => {
 });
 
 // ==================== 控制台彩蛋 - 冰淇淋色调 ====================
-console.log('%c欢迎来到我的个人网站！', 'font-size: 20px; color: #f472b6; font-weight: bold;');
-console.log('%c如果你对代码感兴趣，欢迎联系我！', 'font-size: 14px; color: #a5b4fc;');
-console.log('%c🍦 Let\'s build something amazing together!', 'font-size: 12px; color: #c4b5fd;');
+console.log('%c欢迎来到我的个人网站！', 'font-size: 20px; color: #FCD7FC; font-weight: bold;');
+console.log('%c如果你对代码感兴趣，欢迎联系我！', 'font-size: 14px; color: #B1EBFC;');
+console.log('%c🍦 Let\'s build something amazing together!', 'font-size: 12px; color: #D0FFC9;');
 
 // ==================== 返回顶部按钮 ====================
 const backToTop = document.createElement('button');
@@ -343,7 +343,7 @@ backToTop.style.cssText = `
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f472b6, #a5b4fc);
+    background: linear-gradient(135deg, #FCD7FC, #B1EBFC);
     color: white;
     border: none;
     font-size: 20px;
@@ -352,7 +352,7 @@ backToTop.style.cssText = `
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 999;
-    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.4);
+    box-shadow: 0 4px 15px rgba(252, 215, 252, 0.4);
 `;
 
 document.body.appendChild(backToTop);
