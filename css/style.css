@@ -309,9 +309,15 @@ body {
     transform: translateY(-3px);
 }
 
-.btn-secondary:hover {
-    background: var(--primary-color);
+.btn-accent {
+    background: var(--gradient-3);
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 211, 153, 0.3);
+}
+
+.btn-accent:hover {
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 211, 153, 0.5);
 }
 
 /* 浮动图形 */
