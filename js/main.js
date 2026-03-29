@@ -182,7 +182,7 @@ document.querySelectorAll('section').forEach(section => {
 const isEnglishPage = window.location.pathname.includes('index_en.html');
 const typingTexts = isEnglishPage ? [
     'Backend Developer | Java/Go | AI Applications | Enterprise Systems',
-    'Feishu Knowledge Q&A | WeBank | Meituan',
+    'Lark Knowledge Q&A | WeBank | Meituan',
     'RAG Architecture | Distributed Systems | Performance Optimization'
 ] : [
     '多年后端开发经验 | Java/Go | AI应用 | 企业级系统',
