@@ -309,15 +309,16 @@ body {
     transform: translateY(-3px);
 }
 
-.btn-accent {
-    background: var(--gradient-3);
-    color: white;
-    box-shadow: 0 4px 15px rgba(52, 211, 153, 0.3);
+.btn-outline {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
 }
 
-.btn-accent:hover {
+.btn-outline:hover {
+    background: var(--secondary-color);
+    color: white;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(52, 211, 153, 0.5);
 }
 
 /* 浮动图形 */
