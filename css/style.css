@@ -256,10 +256,7 @@ body {
     font-size: 1.5rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-    overflow: hidden;
-    border-right: 3px solid var(--primary-color);
-    white-space: nowrap;
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    line-height: 1.8;
 }
 
 @keyframes typing {
